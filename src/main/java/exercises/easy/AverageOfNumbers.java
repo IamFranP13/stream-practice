@@ -10,7 +10,7 @@ public class AverageOfNumbers {
 
     public static OptionalDouble average(List<Integer> numbers) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

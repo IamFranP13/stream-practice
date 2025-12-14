@@ -20,7 +20,7 @@ public class UniqueWords {
         // Pista: usa flatMap() para dividir por espacios, map() para toLowerCase(),
         // distinct() para únicos, y sorted() para ordenar
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

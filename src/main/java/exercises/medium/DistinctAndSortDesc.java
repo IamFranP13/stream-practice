@@ -19,7 +19,7 @@ public class DistinctAndSortDesc {
         // TODO: Implementa este método usando streams
         // Pista: usa distinct(), sorted() con Comparator.reverseOrder()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

@@ -7,7 +7,7 @@ public class FindPairsWithSum {
 
     public static List<List<Integer>> findPairs(List<Integer> numbers, int target) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

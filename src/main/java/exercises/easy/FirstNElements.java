@@ -16,7 +16,7 @@ public class FirstNElements {
      */
     public static List<Integer> getFirstN(List<Integer> numbers, int n) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

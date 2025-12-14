@@ -20,7 +20,7 @@ public class FilterAndTransform {
         // TODO: Implementa este método usando streams
         // Pista: usa filter() para el rango, luego map() para elevar al cuadrado
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

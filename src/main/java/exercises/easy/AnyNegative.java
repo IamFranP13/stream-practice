@@ -16,7 +16,7 @@ public class AnyNegative {
     public static boolean hasNegative(List<Integer> numbers) {
         // Pista: usa anyMatch()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

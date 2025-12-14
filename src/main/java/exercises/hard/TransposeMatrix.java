@@ -25,7 +25,7 @@ public class TransposeMatrix {
         // Usa IntStream.range() para las columnas
         // Para cada columna, mapea todos los elementos de esa columna de cada fila
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

@@ -18,7 +18,7 @@ public class FindFirstEven {
         // TODO: Implementa este método usando streams
         // Pista: usa filter() y findFirst()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

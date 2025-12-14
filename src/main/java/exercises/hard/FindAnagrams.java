@@ -20,7 +20,7 @@ public class FindAnagrams {
      */
     public static Map<String, List<String>> findAnagramGroups(List<String> words) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

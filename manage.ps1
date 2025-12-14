@@ -4,7 +4,7 @@ param(
     [string]$Action
 )
 
-Write-Host "Ejecutando acción: $Action" -ForegroundColor Cyan
+Write-Host "Running action: $Action" -ForegroundColor Cyan
 
 if ($Action -eq "hide") {
     mvn compile exec:java "-Dexec.args=hide"

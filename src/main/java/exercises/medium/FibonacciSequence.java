@@ -20,7 +20,7 @@ public class FibonacciSequence {
         // Pista: usa Stream.iterate() con un array de 2 elementos [a, b]
         // o usa IntStream.range() con una función que calcule cada número
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 

@@ -1,12 +1,12 @@
 @echo off
 if "%1"=="hide" (
-    echo Ocultando soluciones...
+    echo Hiding solutions...
     call mvn compile exec:java "-Dexec.args=hide"
 ) else if "%1"=="show" (
-    echo Restaurando soluciones...
+    echo Restoring solutions...
     call mvn compile exec:java "-Dexec.args=show"
 ) else (
-    echo Uso: manage.bat [hide^|show]
-    echo   hide - Oculta las soluciones para practicar
-    echo   show - Restaura las soluciones originales
+    echo Usage: manage.bat [hide^|show]
+    echo   hide - Hide solutions for practice
+    echo   show - Restore original solutions
 )

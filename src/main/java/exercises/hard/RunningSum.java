@@ -23,7 +23,7 @@ public class RunningSum {
         // pero funcional)
         // La mejor solución usa IntStream.range() con mapToObj()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

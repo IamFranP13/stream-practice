@@ -21,7 +21,7 @@ public class LongestString {
         // TODO: Implementa este método usando streams
         // Pista: usa max() con un comparador que compare por longitud
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

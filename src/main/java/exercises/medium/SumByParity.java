@@ -20,7 +20,7 @@ public class SumByParity {
         // TODO: Implementa este método usando streams
         // Pista: usa Collectors.partitioningBy() con Collectors.summingInt()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

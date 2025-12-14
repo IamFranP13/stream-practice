@@ -19,7 +19,7 @@ public class PartitionByParity {
         // TODO: Implementa este método usando streams
         // Pista: usa collect() con Collectors.partitioningBy()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

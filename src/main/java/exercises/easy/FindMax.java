@@ -16,7 +16,7 @@ public class FindMax {
      */
     public static Optional<Integer> findMax(List<Integer> numbers) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

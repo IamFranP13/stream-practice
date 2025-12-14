@@ -17,7 +17,7 @@ public class SkipElements {
     public static List<Integer> skipFirst(List<Integer> numbers, int n) {
         // Pista: usa skip() y toList()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

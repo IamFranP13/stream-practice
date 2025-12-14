@@ -15,7 +15,7 @@ public class ToUpperCase {
      */
     public static List<String> convertToUpperCase(List<String> strings) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

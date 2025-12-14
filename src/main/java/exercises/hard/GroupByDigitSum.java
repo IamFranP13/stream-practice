@@ -20,7 +20,7 @@ public class GroupByDigitSum {
      */
     public static Map<Integer, List<Integer>> groupByDigitSum(List<Integer> numbers) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 

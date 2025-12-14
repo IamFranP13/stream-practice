@@ -21,7 +21,7 @@ public class MergeSortedLists {
         // Aunque las listas de entrada están ordenadas, el resultado de flatMap no lo
         // estará
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

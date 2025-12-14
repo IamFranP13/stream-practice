@@ -22,7 +22,7 @@ public class MostFrequentElement {
         // Pista: agrupa por elemento, cuenta frecuencias, encuentra el máximo por valor
         // Usa Collectors.groupingBy(), Collectors.counting(), y max()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

@@ -55,7 +55,7 @@ public class GroupStatistics {
         // Para obtener múltiples estadísticas, considera usar Collectors.teeing() (Java
         // 12+)
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 

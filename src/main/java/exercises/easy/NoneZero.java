@@ -16,7 +16,7 @@ public class NoneZero {
     public static boolean noneAreZero(List<Integer> numbers) {
         // Pista: usa noneMatch()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

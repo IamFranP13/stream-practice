@@ -16,7 +16,7 @@ public class CountGreaterThan {
      */
     public static long count(List<Integer> numbers, int threshold) {
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

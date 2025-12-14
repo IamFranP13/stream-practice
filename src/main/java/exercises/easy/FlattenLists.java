@@ -17,7 +17,7 @@ public class FlattenLists {
         // TODO: Implementa este método usando streams
         // Pista: usa flatMap() y toList()
         // SOLUTION START
-        throw new UnsupportedOperationException("Implementa este método");
+        throw new UnsupportedOperationException("Implement this method");
         // SOLUTION END
     }
 }

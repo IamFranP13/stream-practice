@@ -25,8 +25,8 @@ public class SolutionManager {
     public static void main(String[] args) {
         if (args.length != 1 || (!args[0].equals("hide") && !args[0].equals("show"))) {
             System.out.println("Usage: SolutionManager <hide|show>");
-            System.out.println("  hide - Oculta las soluciones para modo práctica");
-            System.out.println("  show - Restaura las soluciones desde el backup");
+            System.out.println("  hide - Hides solutions for practice mode");
+            System.out.println("  show - Restores solutions from backup");
             System.exit(1);
         }
 
@@ -45,7 +45,7 @@ public class SolutionManager {
     private static void hideSolutions() throws IOException {
         Path exercisesDir = Path.of(EXERCISES_PATH);
         if (!Files.exists(exercisesDir)) {
-            throw new IOException("No se encontró el directorio de ejercicios: " + EXERCISES_PATH);
+            throw new IOException("Exercises directory not found: " + EXERCISES_PATH);
         }
 
         Map<String, String> solutionsBackup = new HashMap<>();
@@ -74,7 +74,7 @@ public class SolutionManager {
                 String indent = getIndentation(solution);
                 // Build replacement using captured groups
                 String replacement = matcher.group(1) + indent +
-                        "throw new UnsupportedOperationException(\"Implementa este método\");" +
+                        "throw new UnsupportedOperationException(\"Implement this method\");" +
                         matcher.group(3);
                 matcher.appendReplacement(newContent, Matcher.quoteReplacement(replacement));
             }
@@ -85,29 +85,30 @@ public class SolutionManager {
                 solutionsBackup.put(relativePath, String.join("\n<<<SOLUTION_SEPARATOR>>>\n", solutions));
                 Files.writeString(file, newContent.toString());
                 filesProcessed++;
-                System.out.println("✓ Solución ocultada: " + relativePath);
+                System.out.println("[OK] Solution hidden: " + relativePath);
             }
         }
 
         if (filesProcessed == 0) {
-            System.out.println("⚠ No se encontraron soluciones marcadas para ocultar.");
-            System.out.println("  Asegúrate de que los archivos tengan marcadores:");
+            System.out.println("[WARN] No solutions found to hide.");
+            System.out.println("  Make sure files have markers:");
             System.out.println("  // SOLUTION START");
             System.out.println("  // SOLUTION END");
             return;
         }
 
         saveBackup(solutionsBackup);
-        System.out.println("\n✅ " + filesProcessed + " archivo(s) procesado(s)");
-        System.out.println("📁 Backup guardado en: " + BACKUP_FILE);
-        System.out.println("\n🎯 ¡Modo práctica activado! Los tests fallarán hasta que implementes las soluciones.");
+        System.out.println("\n[SUCCESS] " + filesProcessed + " file(s) processed");
+        System.out.println("[FILE] Backup saved to: " + BACKUP_FILE);
+        System.out.println(
+                "\n[PRACTICE] Practice mode activated! Tests will fail until you implement solutions.");
     }
 
     private static void showSolutions() throws IOException {
         Path backupPath = Path.of(BACKUP_FILE);
         if (!Files.exists(backupPath)) {
-            throw new IOException("No se encontró el archivo de backup: " + BACKUP_FILE +
-                    "\n  Primero ejecuta 'hide' para crear el backup.");
+            throw new IOException("Backup file not found: " + BACKUP_FILE +
+                    "\n  Run 'hide' first to create backup.");
         }
 
         Map<String, String> solutionsBackup = loadBackup();
@@ -117,7 +118,7 @@ public class SolutionManager {
         for (Map.Entry<String, String> entry : solutionsBackup.entrySet()) {
             Path file = exercisesDir.resolve(entry.getKey());
             if (!Files.exists(file)) {
-                System.out.println("⚠ Archivo no encontrado: " + entry.getKey());
+                System.out.println("[WARN] File not found: " + entry.getKey());
                 continue;
             }
 
@@ -138,11 +139,11 @@ public class SolutionManager {
 
             Files.writeString(file, newContent.toString());
             filesRestored++;
-            System.out.println("✓ Solución restaurada: " + entry.getKey());
+            System.out.println("[OK] Solution restored: " + entry.getKey());
         }
 
-        System.out.println("\n✅ " + filesRestored + " archivo(s) restaurado(s)");
-        System.out.println("\n📚 Soluciones visibles. Ejecuta 'mvn test' para verificar.");
+        System.out.println("\n[SUCCESS] " + filesRestored + " file(s) restored");
+        System.out.println("\n[SOLUTIONS] Solutions visible. Run 'mvn test' to verify.");
     }
 
     private static String getIndentation(String code) {
@@ -179,7 +180,7 @@ public class SolutionManager {
         try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(decoded))) {
             return (Map<String, String>) ois.readObject();
         } catch (ClassNotFoundException e) {
-            throw new IOException("Error al leer el backup: " + e.getMessage());
+            throw new IOException("Error reading backup: " + e.getMessage());
         }
     }
 }
