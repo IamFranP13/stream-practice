@@ -54,12 +54,9 @@ public class GroupStatistics {
         // Necesitarás usar Collectors.collectingAndThen() o crear tu propio collector
         // Para obtener múltiples estadísticas, considera usar Collectors.teeing() (Java
         // 12+)
-        return numbers.stream()
-                .collect(Collectors.partitioningBy(
-                        n -> (n & 1) == 0,
-                        Collectors.collectingAndThen(
-                                Collectors.summarizingInt(Integer::intValue),
-                                GroupStatistics::toStats)));
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 
     private static Stats toStats(IntSummaryStatistics s) {

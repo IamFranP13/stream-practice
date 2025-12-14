@@ -19,11 +19,9 @@ public class FibonacciSequence {
         // TODO: Implementa este método usando streams
         // Pista: usa Stream.iterate() con un array de 2 elementos [a, b]
         // o usa IntStream.range() con una función que calcule cada número
-
-        return Stream.iterate(new int[] { 0, 1 }, e -> new int[] { e[1], e[0] + e[1] })
-                .map(e -> e[0])
-                .limit(n)
-                .toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 
 }

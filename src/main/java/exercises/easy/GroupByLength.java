@@ -18,6 +18,8 @@ public class GroupByLength {
     public static Map<Integer, List<String>> groupByLength(List<String> strings) {
         // TODO: Implementa este método usando streams
         // Pista: usa collect() con Collectors.groupingBy()
-        return strings.stream().collect(Collectors.groupingBy(String::length));
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

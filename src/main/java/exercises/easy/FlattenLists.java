@@ -16,7 +16,8 @@ public class FlattenLists {
     public static List<Integer> flatten(List<List<Integer>> lists) {
         // TODO: Implementa este método usando streams
         // Pista: usa flatMap() y toList()
-        return lists.stream().flatMap(List::stream).toList();
-
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

@@ -14,6 +14,8 @@ public class ProductOfNumbers {
      * @return product of all numbers, or 1 if list is empty
      */
     public static int product(List<Integer> numbers) {
-        return numbers.stream().reduce((acc,num) -> acc * num).orElse(1);
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

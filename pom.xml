@@ -61,6 +61,14 @@
                     <argLine>--enable-preview</argLine>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>tools.SolutionManager</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>

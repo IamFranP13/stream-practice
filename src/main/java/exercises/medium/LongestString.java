@@ -20,7 +20,8 @@ public class LongestString {
     public static Optional<String> findLongest(List<String> strings) {
         // TODO: Implementa este método usando streams
         // Pista: usa max() con un comparador que compare por longitud
-        return strings.stream().max(Comparator.comparingInt(String::length));
-
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

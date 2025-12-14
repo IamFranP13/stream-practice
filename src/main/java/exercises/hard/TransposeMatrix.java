@@ -24,17 +24,8 @@ public class TransposeMatrix {
         // Pista: necesitas trabajar con índices de columnas
         // Usa IntStream.range() para las columnas
         // Para cada columna, mapea todos los elementos de esa columna de cada fila
-        if (matrix.isEmpty()) {
-            return List.of();
-        }
-
-        int rows = matrix.size();
-        int cols = matrix.get(0).size();
-
-        return IntStream.range(0, cols)
-                .mapToObj(c -> IntStream.range(0, rows)
-                        .mapToObj(r -> matrix.get(r).get(c))
-                        .toList())
-                .toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

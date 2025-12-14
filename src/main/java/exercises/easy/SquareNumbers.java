@@ -14,7 +14,8 @@ public class SquareNumbers {
      * @return list of squared numbers
      */
     public static List<Integer> square(List<Integer> numbers) {
-        return numbers.stream()
-                .map(n -> n * n).toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

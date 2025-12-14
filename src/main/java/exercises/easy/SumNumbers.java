@@ -14,8 +14,8 @@ public class SumNumbers {
      * @return sum of all numbers
      */
     public static int sum(List<Integer> numbers) {
-        return numbers.stream()
-                .mapToInt(Integer::intValue)
-                .sum();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

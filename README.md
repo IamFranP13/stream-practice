@@ -56,6 +56,40 @@ Ejercicios complejos que requieren pensamiento avanzado y combinaciones sofistic
 - **TransposeMatrix** - Transponer matriz (IntStream + transformaciones complejas)
 
 
+## Gestión de Soluciones
+
+Este proyecto incluye un sistema para ocultar/mostrar las soluciones, ideal para practicar:
+
+### Usando scripts (Recomendado)
+
+Más fácil y rápido, sin comandos largos:
+
+```bash
+# Windows CMD
+manage.bat hide
+manage.bat show
+
+# PowerShell
+./manage.ps1 hide
+./manage.ps1 show
+```
+
+### Usando Maven directamente
+
+Si prefieres usar Maven:
+
+```bash
+# 🎯 Modo práctica
+mvn compile exec:java "-Dexec.args=hide"
+
+# 📚 Mostrar soluciones
+mvn compile exec:java "-Dexec.args=show"
+```
+
+> **Nota**: Al ocultar las soluciones, se genera un archivo `.solutions.dat` con las soluciones codificadas (no legibles). Este archivo es necesario para restaurar las soluciones.
+
+---
+
 ## Ejecutar Tests
 
 ```bash

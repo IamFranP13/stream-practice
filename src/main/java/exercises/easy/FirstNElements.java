@@ -15,7 +15,8 @@ public class FirstNElements {
      * @return list containing first N elements
      */
     public static List<Integer> getFirstN(List<Integer> numbers, int n) {
-        return numbers.stream()
-                .limit(n).toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

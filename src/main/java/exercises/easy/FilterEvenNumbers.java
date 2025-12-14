@@ -14,9 +14,8 @@ public class FilterEvenNumbers {
      * @return list containing only even numbers
      */
     public static List<Integer> filterEven(List<Integer> numbers) {
-        return numbers.stream()
-                .filter(n -> n % 2 == 0)
-                .toList();
-
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

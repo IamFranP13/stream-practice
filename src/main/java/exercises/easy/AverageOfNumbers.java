@@ -9,6 +9,8 @@ import java.util.OptionalDouble;
 public class AverageOfNumbers {
 
     public static OptionalDouble average(List<Integer> numbers) {
-        return numbers.stream().mapToInt(Integer::intValue).average();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

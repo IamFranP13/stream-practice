@@ -15,6 +15,8 @@ public class AnyNegative {
      */
     public static boolean hasNegative(List<Integer> numbers) {
         // Pista: usa anyMatch()
-        return numbers.stream().anyMatch(n -> n < 0);
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

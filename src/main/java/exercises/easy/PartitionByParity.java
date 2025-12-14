@@ -18,6 +18,8 @@ public class PartitionByParity {
     public static Map<Boolean, List<Integer>> partition(List<Integer> numbers) {
         // TODO: Implementa este método usando streams
         // Pista: usa collect() con Collectors.partitioningBy()
-        return numbers.stream().collect(Collectors.partitioningBy(n -> n % 2 == 0));
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

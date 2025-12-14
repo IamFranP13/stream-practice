@@ -17,6 +17,8 @@ public class FindMin {
     public static Optional<Integer> findMin(List<Integer> numbers) {
         // TODO: Implementa este método usando streams
         // Pista: usa min() con un comparador
-        return numbers.stream().min(Integer::compare);
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

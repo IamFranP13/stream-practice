@@ -14,7 +14,8 @@ public class SortNumbers {
      * @return sorted list
      */
     public static List<Integer> sort(List<Integer> numbers) {
-        return numbers.stream()
-                .sorted().toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

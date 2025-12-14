@@ -19,7 +19,8 @@ public class SumByParity {
     public static Map<Boolean, Integer> sumByParity(List<Integer> numbers) {
         // TODO: Implementa este método usando streams
         // Pista: usa Collectors.partitioningBy() con Collectors.summingInt()
-        return numbers.stream().collect(
-                Collectors.partitioningBy(integer -> integer % 2 == 0, Collectors.summingInt(Integer::intValue)));
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

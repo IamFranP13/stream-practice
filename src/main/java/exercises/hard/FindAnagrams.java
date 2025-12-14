@@ -19,18 +19,8 @@ public class FindAnagrams {
      *         Only includes groups with more than one word
      */
     public static Map<String, List<String>> findAnagramGroups(List<String> words) {
-        return words.stream()
-                .collect(Collectors.groupingBy(word -> {
-                    char[] chars = word.toLowerCase().toCharArray();
-                    Arrays.sort(chars);
-                    return new String(chars);
-                }))
-                .entrySet()
-                .stream()
-                .filter(entry -> entry.getValue().size() > 1)
-                .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        Map.Entry::getValue
-                ));
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

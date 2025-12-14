@@ -14,7 +14,8 @@ public class ToUpperCase {
      * @return list of uppercase strings
      */
     public static List<String> convertToUpperCase(List<String> strings) {
-        return strings.stream()
-                .map(String::toUpperCase).toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

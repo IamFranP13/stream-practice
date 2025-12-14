@@ -20,9 +20,8 @@ public class MergeSortedLists {
         // Pista: usa flatMap() para aplanar las listas, luego sorted()
         // Aunque las listas de entrada están ordenadas, el resultado de flatMap no lo
         // estará
-        return sortedLists.stream()
-                .flatMap(List::stream)
-                .sorted()
-                .toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

@@ -21,15 +21,8 @@ public class MostFrequentElement {
         // TODO: Implementa este método usando streams
         // Pista: agrupa por elemento, cuenta frecuencias, encuentra el máximo por valor
         // Usa Collectors.groupingBy(), Collectors.counting(), y max()
-        if (numbers.isEmpty()) {
-            return null;
-        }
-
-        return numbers.stream()
-                .collect(Collectors.groupingBy(n -> n, Collectors.counting()))
-                .entrySet().stream()
-                .max(Map.Entry.comparingByValue())
-                .map(Map.Entry::getKey)
-                .orElse(null);
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

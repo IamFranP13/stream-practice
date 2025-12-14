@@ -15,8 +15,8 @@ public class CountGreaterThan {
      * @return count of numbers greater than threshold
      */
     public static long count(List<Integer> numbers, int threshold) {
-        return numbers.stream()
-                .filter(n -> n > threshold)
-                .count();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

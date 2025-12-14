@@ -21,6 +21,8 @@ public class CountFrequency {
     public static Map<Integer, Long> countFrequency(List<Integer> numbers) {
         // TODO: Implementa este método usando streams
         // Pista: usa Collectors.groupingBy() con Collectors.counting()
-        return numbers.stream().collect(groupingBy(Integer::intValue, Collectors.counting()));
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

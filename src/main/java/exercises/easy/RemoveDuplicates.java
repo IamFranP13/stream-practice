@@ -14,7 +14,8 @@ public class RemoveDuplicates {
      * @return list with unique elements only
      */
     public static List<Integer> removeDuplicates(List<Integer> numbers) {
-        return numbers.stream()
-                .distinct().toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

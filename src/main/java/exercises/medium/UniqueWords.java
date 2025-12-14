@@ -19,11 +19,8 @@ public class UniqueWords {
         // TODO: Implementa este método usando streams
         // Pista: usa flatMap() para dividir por espacios, map() para toLowerCase(),
         // distinct() para únicos, y sorted() para ordenar
-        return sentences.stream().flatMap(sentence -> Arrays.stream(sentence.split(" ")))
-                .map(String::toLowerCase)
-                .distinct()
-                .sorted()
-                .toList();
-
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

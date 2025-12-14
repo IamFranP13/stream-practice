@@ -15,6 +15,8 @@ public class NoneZero {
      */
     public static boolean noneAreZero(List<Integer> numbers) {
         // Pista: usa noneMatch()
-        return numbers.stream().noneMatch(integer -> integer == 0);
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

@@ -15,7 +15,8 @@ public class FindMax {
      * @return Optional containing the max value, or empty if list is empty
      */
     public static Optional<Integer> findMax(List<Integer> numbers) {
-        return numbers.stream()
-                .max(Integer::compareTo);
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

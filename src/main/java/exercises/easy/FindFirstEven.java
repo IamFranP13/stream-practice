@@ -17,6 +17,8 @@ public class FindFirstEven {
     public static Optional<Integer> findFirst(List<Integer> numbers) {
         // TODO: Implementa este método usando streams
         // Pista: usa filter() y findFirst()
-        return numbers.stream().filter(e -> e % 2 == 0).findFirst();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

@@ -19,6 +19,8 @@ public class TopNLargest {
     public static List<Integer> getTopN(List<Integer> numbers, int n) {
         // TODO: Implementa este método usando streams
         // Pista: usa sorted() con reverseOrder(), limit() y toList()
-        return numbers.stream().sorted(Comparator.reverseOrder()).limit(n).toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

@@ -19,8 +19,9 @@ public class GroupByDigitSum {
      *         digit sum
      */
     public static Map<Integer, List<Integer>> groupByDigitSum(List<Integer> numbers) {
-        return numbers.stream()
-                .collect(Collectors.groupingBy(GroupByDigitSum::digitSum));
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 
     // Método auxiliar sugerido (puedes implementarlo)

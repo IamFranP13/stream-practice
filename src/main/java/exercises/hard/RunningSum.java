@@ -22,13 +22,8 @@ public class RunningSum {
         // Otra opción: usa un objeto mutable para mantener el estado (no recomendado
         // pero funcional)
         // La mejor solución usa IntStream.range() con mapToObj()
-        int n = numbers.size();
-
-        int[] prefix = new int[n + 1];
-        IntStream.range(0, n).forEach(i -> prefix[i + 1] = prefix[i] + numbers.get(i));
-
-        return IntStream.range(0, n)
-                .mapToObj(i -> prefix[i + 1])
-                .toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }

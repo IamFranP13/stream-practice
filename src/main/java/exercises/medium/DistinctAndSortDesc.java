@@ -18,6 +18,8 @@ public class DistinctAndSortDesc {
     public static List<Integer> distinctAndSortDesc(List<Integer> numbers) {
         // TODO: Implementa este método usando streams
         // Pista: usa distinct(), sorted() con Comparator.reverseOrder()
-        return numbers.stream().distinct().sorted(Comparator.reverseOrder()).toList();
+        // SOLUTION START
+        throw new UnsupportedOperationException("Implementa este método");
+        // SOLUTION END
     }
 }
